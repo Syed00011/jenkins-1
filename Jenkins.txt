@@ -1,6 +1,17 @@
 node {
-    stage('git stage') {
-        echo "hello all"
+    stage('git scm') {
+        echo 'this is git stage'
+    }
+
+    stage('build') {
+        echo 'this is build stage'
+    }
+
+    stage('test') {
+        echo 'This is the test stage'
+    }
+
+    stage('deploy') {
+        echo 'This is the deploy stage'
     }
 }
-
