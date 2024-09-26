@@ -1,9 +1,24 @@
 pipeline {
     agent any
     stages {
-        stage ('git stage') {
+        stage('git scm') {
             steps {
-                echo "hello all"
+                echo 'this is git stage'
+            }
+        }
+        stage('build') {
+            steps {
+                echo 'this is build stage'
+            }
+        }
+        stage('test') {
+            steps {
+                echo 'This is the test stage'
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo 'This is the deploy stage'
             }
         }
     }
